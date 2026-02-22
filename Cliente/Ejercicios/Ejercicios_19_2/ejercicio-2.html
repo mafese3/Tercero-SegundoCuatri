@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Formulario de opinión</title>
+  <link href="ejercicio-formulario-retroalimentacion-estilo.css" rel="stylesheet" />
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+    <h1>¡Inscríbete a nuestro gimnasio!</h1>
+
+    <p>Mediante el siguiente formulario podrá optar a una plaza en nuestro gimnasio.</p>
+
+    <form>
+        <section class="form-section">
+            <h2>Información Personal</h2>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <p class="separator">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" name="info-name" id="name" placeholder="Paco Pérez" required>
+                </p>
+                <p class="separator">
+                    <label for="email">Email</label>
+                    <input type="email" name="info-email" id="email" placeholder="email@example.com" required>
+                </p>
+                <p class="separator">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" minlength="9" name="info-tel" id="tel" placeholder="952 00 00 00" required>
+                </p>
+                <p class="separator">
+                    <label for="b_date">Fecha de nacimiento</label>
+                    <input type="date" max="2010-02-20" name="info-date" id="b_date" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Género</legend>
+                
+                <p class="separator">
+
+                    <input type="radio" name="genre" value="masc" id="masc">
+                    <label for="masc">Masculino</label>
+                </p>
+                <p class="separator">
+                    <input type="radio" name="genre" value="fem" id="fem">
+                    <label for="fem">Femenino</label>
+                </p>
+                <p class="separator">
+                    <input type="radio" name="genre" value="other" id="other">
+                    <label for="other">Otro</label>
+                </p>
+                <p class="separator">
+                    <input type="radio" name="genre" value="no_ans" id="no_ans">
+                    <label for="no_ans">Prefiero no decirlo</label>
+                </p>
+            </fieldset>
+        </section>
+
+        <section class="form-section">
+            <h2>Información de suscripción</h2>
+            <fieldset>
+                <label for="suscription">Tipo de suscripción</label>
+                <select name="suscription" id="suscription">
+                    <optgroup label="Selecciona una suscripción">
+                        <option value="none"> ---</option>
+                        <option value="basic">Básica (€29/mes)</option>
+                        <option value="premium">Premium (€49/mes)</option>
+                        <option value="vip">VIP (€79/mes)</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Actividades de interés</legend>
+                <p class="separator">
+                    <input type="checkbox" value="yoga" name="yoga" id="yoga">
+                    <label for="yoga">Yoga</label>
+                </p>
+                <p class="separator">
+                    <input type="checkbox" value="spinning" name="spinning" id="spinning">
+                    <label for="spinning">Spinning</label>
+                </p>
+                <p class="separator">
+                    <input type="checkbox" value="pilates" name="pilates" id="pilates">
+                    <label for="pilates">Pilates</label>
+                </p>
+                <p class="separator">
+                    <input type="checkbox" value="musc" name="musculacion" id="musc">
+                    <label for="musc">Musculación</label>
+                </p>
+                <p class="separator">
+                    <input type="checkbox" value="natacion" name="natacion" id="nata">
+                    <label for="nata">Natación</label>
+                </p>
+                <p class="separator">
+                    <input type="checkbox" value="crossfit" name="crossfit" id="crossfit">
+                    <label for="crossfit">CrossFit</label>
+                </p>
+            </fieldset>
+        </section>
+        <section class="form-section">
+            <fieldset>
+                <legend>Horario preferido:</legend>
+                <p class="separator">
+                    <input type="radio" value="morning" name="timeline" id="morning">
+                    <label for="morning">Mañana</label>
+                </p>
+                <p class="separator">
+                    <input type="radio" value="afternoon" name="timeline" id="after">
+                    <label for="after">Tarde</label>
+                </p>
+                <p class="separator">
+                    <input type="radio" value="night" name="timeline" id="night">
+                    <label for="night">Noche</label>
+                </p>
+            </fieldset>
+        </section>
+        <section class="form-section">
+            <h2>Información adicional</h2>
+
+            <fieldset>
+                <legend>¿Tienes experiencia previa en gimnasios</legend>
+                <p class="separator">
+                    <input type="radio" value="yes" name="experience" id="yes">
+                    <label for="yes">Sí</label>
+                </p>
+                <p class="separator">
+                    <input type="radio" value="no" name="experience" id="no">
+                    <label for="no">No</label>
+                </p>
+            </fieldset>
+
+            <label for="objetives">Objetivos fitness</label>
+            <textarea name="objetives" id="objetives" minlength="50" placeholder="Escriba sus objetivos..."></textarea>
+
+            <fieldset>
+                <label for="meet">¿Cómo nos conociste?</label> <br>
+                <select name="meet" id="meet">
+                    <optgroup label="Selecciona una opción">
+                        <option value="none">---</option>
+                        <option value="social">Redes sociales</option>
+                        <option value="friends">Amigos/Familia</option>
+                        <option value="ads">Publicidad online</option>
+                        <option value="walkby">Paso por aquí</option>
+                        <option value="other">Otro</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            
+        </section>
+
+        <section>
+            <h2>Fin del formulario</h2>
+            
+            <p class="separator">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Acepto los términos y condiciones</label>       
+            </p>
+
+            <button type="submit" id="send-form">Enviar formulario</button>
+            <button type="reset" id="reset-form">Resetear formulario</button>
+        </section>
+    </form>
+
+</body>
+</html>
