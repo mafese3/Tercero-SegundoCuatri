@@ -1,0 +1,11 @@
+:root{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    /* es robusta porque sans-serif está 
+    en todos los navegadores entonces si
+    no tiene instalada Arial, se verá con 
+    sans-serif*/
+}
+
+
+

@@ -1,0 +1,26 @@
+p {
+    font-size: 0.95rem;
+}
+
+.destacado {
+    background-color: #fff3cd;
+    border-left: 4px solid #f0ad4e;
+}
+
+#titular {
+    color: #1a237e;
+    font-size: 2rem;
+}
+
+[data-nuevo] {
+    background-color: #d4edda;
+}
+
+a[href*="wikipedia"] {
+    color: #006400;
+    border-bottom: 1px dashed green;
+}
+
+a[href$=".pdf"] {
+    color: #b71c1c;
+}
