@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Introduce dos operadores</h1>
+
+<form action="/calculator" method="get">
+
+    <p>
+        <label for="op1">Operador 1: </label>
+        <input type="text"  id="op1" name="a">
+    </p>
+
+    <fieldset>
+        <legend>Operación</legend>
+        <p>
+            <input type="radio" name="op" id="suma" value="suma">
+            <label>+</label>
+        </p>
+        <p>
+            <input type="radio" name="op" id="resta" value="resta">
+            <label>-</label>
+        </p>
+        <p>
+            <input type="radio" name="op" id="mult" value="mult">
+            <label>*</label>
+        </p>
+        <p>
+            <input type="radio" name="op" id="div" value="div">
+            <label>/</label>
+        </p>
+    </fieldset>
+
+    <p>
+        <label for="op2">Operador 2: </label>
+        <input type="text"  id="op2" name="b">
+    </p>
+
+    <button>Calcular</button>
+
+</form>
+</body>
+</html>
