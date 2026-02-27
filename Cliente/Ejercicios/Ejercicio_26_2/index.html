@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicios Prácticos de CSS</title>
+</head>
+<body>
+
+    <header>
+        Este encabezado debe tener "position: fixed", estar pegado a la parte superior de la página y permanecer visible al hacer scroll hacia abajo.
+    </header>
+
+    <main>
+        <section id="valores-colores">
+            <h2>1. Valores y colores</h2>
+            
+            <h3>Cuatro formas de especificar un color</h3>
+            <p class="color-nombre">Este texto debe estar en rojo usando el nombre del color (red).</p>
+            <p class="color-hex-largo">Este texto debe estar en rojo usando hexadecimal de 6 dígitos (#ff0000).</p>
+            <p class="color-hex-corto">Este texto debe estar en rojo usando hexadecimal abreviado (#f00).</p>
+            <p class="color-rgb">Este texto debe estar en rojo usando la función rgb().</p>
+
+            <h3>Transparencia con rgba()</h3>
+            <div class="fondo-solido">Este contenedor debe tener un fondo azul sólido (sin transparencia).</div>
+            <div class="fondo-transparente">Este contenedor debe tener un fondo azul semitransparente usando rgba(). Compara cómo se ve respecto al de arriba.</div>
+
+            <h3>Unidades de longitud (font-size)</h3>
+            <p class="medida-px">El tamaño de fuente de este texto debe definirse en píxeles (px).</p>
+            <p class="medida-em">El tamaño de fuente de este texto debe definirse en ems (em).</p>
+            <p class="medida-pt">El tamaño de fuente de este texto debe definirse en puntos (pt).</p>
+            <p class="medida-cm">El tamaño de fuente de este texto debe definirse en centímetros (cm).</p>
+        </section>
+
+        <hr>
+
+        <section id="fondos-bordes">
+            <h2>2. Fondos y bordes</h2>
+            
+            <h3>Repetición de imagen de fondo</h3>
+            <div class="fondo-repeat-x">
+                Este div debe tener una imagen de fondo que se repita únicamente en el eje horizontal usando "background-repeat: repeat-x".
+            </div>
+
+            <h3>Posición de imagen de fondo</h3>
+            <div class="fondo-posicion">
+                Este div debe tener una imagen de fondo sin repetición. Experimenta cambiando su "background-position" (usa center, top right y coordenadas en píxeles).
+            </div>
+
+            <h3>Estilos de borde</h3>
+            <div class="borde-solid">Esta caja debe tener un borde sólido (solid) de un color.</div>
+            <div class="borde-dashed">Esta caja debe tener un borde a rayas (dashed) de otro color.</div>
+            <div class="borde-dotted">Esta caja debe tener un borde punteado (dotted) de otro color.</div>
+            <div class="borde-double">Esta caja debe tener un borde doble (double) de otro color distinto.</div>
+
+            <h3>Bordes redondeados</h3>
+            <div class="tarjeta-redondeada">
+                Diseña esta tarjeta con bordes redondeados usando "border-radius". Prueba con valores en px y em para lograr desde esquinas suaves hasta una forma casi ovalada.
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="tamano-desbordamiento">
+            <h2>3. Tamaño y desbordamiento</h2>
+
+            <h3>Propiedad overflow</h3>
+            <div class="caja-overflow">
+                Este div debe tener un width y height fijos en píxeles. Introduce aquí texto suficiente, texto suficiente, texto suficiente, texto suficiente, texto suficiente, texto suficiente para que desborde su contenedor. Prueba aplicarle "overflow: visible", "hidden", "scroll" y "auto" para ver qué pasa.
+            </div>
+
+            <h3>width vs max-width</h3>
+            <div class="contenedor-estrecho">
+                Este es un contenedor estrecho.
+                <img src="https://via.placeholder.com/800x200" alt="Imagen ancha" class="img-width">
+                La imagen superior debe tener "width: 100%".
+                <img src="https://via.placeholder.com/800x200" alt="Imagen ancha" class="img-max-width">
+                La imagen superior debe tener "max-width: 100%". Observa las diferencias al redimensionar la ventana.
+            </div>
+
+            <h3>Altura mínima con min-height</h3>
+            <div class="caja-min-height-vacia">
+                Esta caja debe tener "min-height: 100px" y tiene poco contenido.
+            </div>
+            <div class="caja-min-height-llena">
+                Esta caja también debe tener "min-height: 100px" pero tiene MUCHO contenido. Llena este espacio con varias líneas de texto para que compruebes cómo la caja crece automáticamente para adaptarse, a diferencia de si usaras un height fijo.
+            </div>
+
+            <h3>Unidades de viewport</h3>
+            <div class="caja-viewport">
+                Este div debe ocupar exactamente el 50% del ancho de la pantalla (50vw) y el 30% del alto de la pantalla (30vh).
+            </div>
+        </section>
+
+        <hr>
+
+        [Image of CSS margin collapse diagram]
+        <section id="modelo-cajas">
+            <h2>4. Modelo de cajas</h2>
+
+            <h3>content-box vs border-box</h3>
+            <div class="caja-content-box">
+                Esta caja debe tener width, padding y border fijos, y usar "box-sizing: content-box" (el valor por defecto).
+            </div>
+            <div class="caja-border-box">
+                Esta caja debe tener exactamente los mismos width, padding y border que la anterior, pero usar "box-sizing: border-box". Compara sus tamaños reales.
+            </div>
+
+            <h3>Colapso de márgenes</h3>
+            <div class="bloque-margen">Bloque 1: Aplícale un margin-bottom de 40px.</div>
+            <div class="bloque-margen">Bloque 2: Aplícale un margin-top de 30px. Observa cómo el espacio entre ambos no es 70px, sino 40px (se colapsan). Prueba también con márgenes negativos.</div>
+            <div class="bloque-margen">Bloque 3: Sigue probando el colapso aquí.</div>
+
+            <h3>Márgenes y rellenos por lado</h3>
+            <div class="caja-lados-distintos">
+                Diseña esta caja aplicando valores distintos para margin-top, margin-right, margin-bottom y margin-left, y haz lo mismo con las propiedades individuales de padding.
+            </div>
+
+            <h3>margin vs padding</h3>
+            <div class="caja-margin-padding">
+                Crea una caja con un borde visible y un color de fondo. Aplícale tanto margin como padding para que compruebes visualmente que el margin empuja hacia afuera del borde y el padding empuja el contenido hacia adentro del borde.
+            </div>
+        </section>
+
+        <hr>
+
+        [Image of CSS absolute vs relative positioning diagram]
+        <section id="display-posicionamiento">
+            <h2>5. Display y posicionamiento</h2>
+
+            <h3>inline vs inline-block</h3>
+            <div class="contenedor-spans">
+                <span class="span-prueba">Span 1</span>
+                <span class="span-prueba">Span 2</span>
+                <span class="span-prueba">Span 3</span>
+                Intenta darles width, height y padding vertical. Luego cámbiales el display a "inline-block" para ver cómo dejan de solaparse y respetan las dimensiones.
+            </div>
+
+            <h3>Barra de navegación horizontal</h3>
+            <nav>
+                <ul class="lista-nav">
+                    <li class="item-nav"><a href="#">Inicio</a></li>
+                    <li class="item-nav"><a href="#">Servicios</a></li>
+                    <li class="item-nav"><a href="#">Contacto</a></li>
+                </ul>
+                Usa "display: inline-block" en los 'li' de esta lista para ponerlos en horizontal, y aplica padding a los enlaces para hacerlos más fáciles de hacer clic.
+            </nav>
+
+            <h3>position: relative vs position: absolute</h3>
+            <div class="contenedor-padre">
+                Soy el contenedor padre. Debería tener algún borde para que me veas.
+                <div class="caja-relativa">
+                    Tengo "position: relative". Desplázame 20px hacia abajo (top: 20px) y 30px a la derecha (left: 30px).
+                </div>
+                <div class="caja-absoluta">
+                    Tengo "position: absolute". (Asegúrate de darle position relative al padre para que yo me mueva respecto a él, no respecto a toda la página).
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="funciones-important">
+            <h2>6. Funciones e !important</h2>
+
+            <h3>Función calc()</h3>
+            <div class="caja-calc-1">
+                Usa calc() para que el ancho de este div sea exactamente el 100% de la pantalla menos 40 píxeles: "calc(100% - 40px)".
+            </div>
+            <div class="caja-calc-2">
+                Usa calc() mezclando unidades. Por ejemplo, que mida el 50% del viewport menos 2 ems: "calc(50vw - 2em)".
+            </div>
+
+            <h3>Uso de !important</h3>
+            <div class="caja-important">
+                Escribe dos reglas de CSS que intenten cambiar el color de fondo de esta caja. Usa "!important" en la regla que lógicamente debería perder por cascada o especificidad, para forzar que sea la que gane.
+            </div>
+        </section>
+
+        <div style="height: 1000px; padding-top: 50px;">
+            <p>(Espacio adicional para permitir hacer scroll y probar el encabezado fijo).</p>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* ==========================================
+   CONFIGURACIÓN BASE
+========================================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   ENCABEZADO FIJO
+========================================== */
+header {
+    /* 1. Haz que el posicionamiento sea fijo */
+    /* 2. Pégalo arriba, a la izquierda y a la derecha */
+    /* 3. Ponle un color de fondo para que no se mezcle con el texto al hacer scroll */
+    /* 4. Dale un poco de padding y un z-index alto */
+    
+}
+
+/* Para que el contenido principal no quede oculto bajo el header fijo */
+main {
+    padding-top: 80px;
+    margin: 0 20px;
+}
+
+/* ==========================================
+   1. VALORES Y COLORES
+========================================== */
+.color-nombre {
+    color: red;    
+}
+
+.color-hex-largo {
+    color: #ff0000;    
+}
+
+.color-hex-corto {
+    color: #f00;    
+}
+
+.color-rgb {
+    color: rgb(255, 0, 0);    
+}
+
+.fondo-solido {
+    background-color: rgba(0, 0, 255, 1);    
+}
+
+.fondo-transparente {
+    background-color: rgba(0, 0, 255, 0.5);    
+}
+
+.medida-px {
+    font-size: 20px;
+}
+
+.medida-em {
+    font-size: 1.5em;    
+}
+
+.medida-pt {
+    font-size: 16pt;    
+}
+
+.medida-cm {
+    font-size: 0.5cm;    
+}
+
+/* ==========================================
+   2. FONDOS Y BORDES
+========================================== */
+.fondo-repeat-x {
+    /* 1. Añade una url() de imagen de fondo (puedes buscar una pequeña en internet) */
+    /* 2. Haz que solo se repita en horizontal */
+    /* 3. Dale una altura al div para que se vea bien la imagen */    
+}
+
+.fondo-posicion {
+    /* 1. Añade una url() de imagen */
+    /* 2. Evita que se repita */
+    /* 3. Juega con background-position */
+    /* 4. Dale altura al div */
+    
+}
+
+.borde-solid {
+    /* Borde de 3px, sólido, color a tu elección. Ponle padding. */
+    
+}
+
+.borde-dashed {
+    /* Borde de 3px, dashed, color a tu elección. Ponle padding. */
+    
+}
+
+.borde-dotted {
+    /* Borde de 3px, dotted, color a tu elección. Ponle padding. */
+    
+}
+
+.borde-double {
+    /* Borde de 6px, double, color a tu elección. Ponle padding. */
+    
+}
+
+.tarjeta-redondeada {
+    /* Dale borde, padding, algo de color de fondo y aplica border-radius */
+    
+}
+
+/* ==========================================
+   3. TAMAÑO Y DESBORDAMIENTO
+========================================== */
+.caja-overflow {
+    /* 1. Dale width y height pequeños (ej. 150px) */
+    /* 2. Ponle un borde */
+    /* 3. Prueba a cambiar el overflow (visible, hidden, scroll, auto) */
+    
+}
+
+.contenedor-estrecho {
+    /* Dale un ancho de 300px y un borde */
+    
+}
+
+.img-width {
+    /* Fuerza el ancho al 100% (width) */
+    
+}
+
+.img-max-width {
+    /* Limita el ancho al 100% (max-width) */
+    
+}
+
+.caja-min-height-vacia, 
+.caja-min-height-llena {
+    /* Dale un min-height de 100px, un borde y un color de fondo para distinguirlas */
+    
+}
+
+.caja-viewport {
+    /* Usa 50vw para el ancho y 30vh para el alto. Ponle fondo. */
+    
+}
+
+/* ==========================================
+   4. MODELO DE CAJAS
+========================================== */
+.caja-content-box,
+.caja-border-box {
+    /* A ambas: width 200px, padding 20px, border 5px solid black, background-color claro */
+    
+}
+
+.caja-content-box {
+    /* Aplica box-sizing: content-box */
+    
+}
+
+.caja-border-box {
+    /* Aplica box-sizing: border-box */
+    
+}
+
+.bloque-margen {
+    /* Dale algo de padding y fondo para que parezca un bloque.
+       Luego juega con margin-top y margin-bottom para ver el colapso. */
+    
+}
+
+.caja-lados-distintos {
+    /* Usa margin-top, margin-right, etc. y padding-top, padding-right, etc.
+       Ponle un borde para que veas el resultado. */
+    
+}
+
+.caja-margin-padding {
+    /* Ponle borde, color de fondo, margin uniforme y padding uniforme */
+    
+}
+
+/* ==========================================
+   5. DISPLAY Y POSICIONAMIENTO
+========================================== */
+.contenedor-spans {
+    /* Solo para separar visualmente */
+    margin-bottom: 20px;
+}
+
+.span-prueba {
+    /* 1. Ponles borde o fondo */
+    /* 2. Intenta darles width y padding */
+    /* 3. Cambia el display a inline-block para que funcionen las medidas */
+    
+}
+
+.lista-nav {
+    /* Quita los puntos de la lista y el padding/margin por defecto */
+    
+}
+
+.item-nav {
+    /* Haz que los elementos de la lista se pongan uno al lado del otro */
+    
+}
+
+.item-nav a {
+    /* Quita el subrayado, ponle padding, color de fondo y color de texto.
+       Recuerda que los enlaces son inline por defecto, puede que necesites cambiar su display. */
+    
+}
+
+.contenedor-padre {
+    /* Dale un tamaño, un borde grueso, y MUY IMPORTANTE: position relative */
+    
+}
+
+.caja-relativa {
+    /* position relative, top 20px, left 30px. Ponle fondo. */
+    
+}
+
+.caja-absoluta {
+    /* position absolute, y posicionala con top/bottom/left/right. Ponle fondo. */
+    
+}
+
+/* ==========================================
+   6. FUNCIONES Y !IMPORTANT
+========================================== */
+.caja-calc-1 {
+    /* width usando calc(), color de fondo, alto fijo y un margen para separar */
+    
+}
+
+.caja-calc-2 {
+    /* width usando calc() mezclando unidades, color de fondo, alto fijo */
+    
+}
+
+.caja-important {
+    /* Intenta poner el fondo verde, pero luego haz otra regla (o usa una clase/id diferente)
+       que intente ponerlo rojo y usa !important para que gane la batalla. */
+    
+}
