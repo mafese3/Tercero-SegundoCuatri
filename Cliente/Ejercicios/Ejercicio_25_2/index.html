@@ -1,25 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Integral de Tipografía y Estilos CSS</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <article>
-        <h1>Este es el encabezado 1</h1>
-        <p>Este es el párrafo de la descripción del tema principal</p>
+
+    <main>
+        <article class="jerarquia-escalas">
+            <h1 class="titulo-escala">El Arte de la Tipografía en la Web</h1>
+            <p class="parrafo-escala-rem">Este párrafo servirá para probar la medida rem. La tipografía es el pilar fundamental del diseño web, ya que el contenido es principalmente texto.</p>
+            
+            <h2 class="subtitulo-escala">Entendiendo las medidas relativas</h2>
+            <p class="parrafo-escala-em">Este párrafo utilizará la medida em para depender del tamaño de su contenedor padre.</p>
+            
+            <h3 class="seccion-escala">Medidas absolutas</h3>
+            <p class="parrafo-escala-px">Este texto utilizará píxeles (px) para establecer un tamaño estricto.</p>
+            
+            <blockquote class="cita-escala">
+                "La web es un 95% tipografía." - Oliver Reichenstein
+            </blockquote>
+
+            <div class="analisis-requerido">
+                <h4>Justificación de la pila de fuentes y escalas:</h4>
+                <p>...</p>
+            </div>
+        </article>
+
+        <hr>
+
+        <section class="comparacion-estilos">
+            <h2>Comparación: Normal, Italic y Oblique</h2>
+            <p class="estilo-normal">El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+            <p class="estilo-italic">El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+            <p class="estilo-oblique">El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.</p>
+            
+            <div class="analisis-requerido">
+                <h4>Análisis visual:</h4>
+                <p>...</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="pesos-legibilidad">
+            <h2 class="peso-extrabold">Pesos de Fuente (Font Weight)</h2>
+            <p class="peso-ligero">Este texto utiliza un peso muy ligero (ej. 300). Puede ser elegante pero presentar problemas de contraste.</p>
+            <p class="peso-normal">Este texto utiliza el peso normal por defecto (400) o palabra clave normal.</p>
+            <p class="peso-negrita">Este texto utiliza un peso grueso mediante palabra clave o valor numérico alto (ej. 700 u 800).</p>
+        </section>
+
+        <hr>
+
+        <section class="decoracion-semantica">
+            <h2>Decoración con Significado</h2>
+            <p>
+                En esta oración necesitamos destacar un <em>término con énfasis</em>, mostrar un precio que es un <del>término eliminado</del> y destacar un fragmento de <mark>texto resaltado</mark> como si usáramos un marcador fluorescente.
+            </p>
+            <p class="texto-enfasis">
+                Término con enfasis
+            </p>
+            <p class="texto-eliminado">
+                Término eliminado
+            </p>
+            <p class="texto-resaltado">
+                Texto resaltado
+            </p>
+        </section>
+
+        <hr>
+
+        <section class="alineacion-altura">
+            <h2>Alineación y Lectura</h2>
+            
+            <div class="bloque-alineacion">
+                <p class="alinear-izquierda">Texto alineado a la izquierda. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                <p class="alinear-derecha">Texto alineado a la derecha. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                <p class="alinear-centro">Texto centrado. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                <p class="alinear-justificado">Texto justificado. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+            </div>
+
+            <h3>Pruebas de line-height</h3>
+            <div class="bloque-interlineado">
+                <p class="linea-estrecha">Interlineado estrecho: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut dignissim libero, vel rutrum felis. Pellentesque habitant morbi tristique senectus et netus.</p>
+                <p class="linea-optima">Interlineado óptimo: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut dignissim libero, vel rutrum felis. Pellentesque habitant morbi tristique senectus et netus.</p>
+                <p class="linea-exagerada">Interlineado exagerado: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut dignissim libero, vel rutrum felis. Pellentesque habitant morbi tristique senectus et netus.</p>
+            </div>
+            
+            <div class="analisis-requerido">
+                <h4>Análisis de legibilidad (Alineación e Interlineado):</h4>
+                <p>...</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="transformaciones">
+            <h2 class="texto-mayusculas">este título debe estar en mayúsculas</h2>
+            <h3 class="texto-minusculas">ESTE SUBTÍTULO DEBE ESTAR EN MINÚSCULAS</h3>
+            <p class="texto-capitalizado">nombres propios: maría, juan pérez, ciudad de méxico.</p>
+            
+            <div class="analisis-requerido">
+                <h4>Discusión sobre problemas lingüísticos en español:</h4>
+                <p>...</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="estilos-listas">
+            <h2>Listas y Posicionamiento</h2>
+
+            <h3>Anidación (3 niveles)</h3>
+            <ul class="lista-anidada">
+                <li>Nivel 1: Conceptos Básicos
+                    <ul>
+                        <li>Nivel 2: CSS
+                            <ul>
+                                <li>Nivel 3: Selectores</li>
+                                <li>Nivel 3: Cascada</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Posición del Bullet: Inside vs Outside</h3>
+            <div class="contenedor-columnas">
+                <ul class="bullet-inside">
+                    <li>Elemento con texto largo para demostrar list-style-position: inside. Observa cómo el texto fluye debajo del bullet.</li>
+                    <li>Segundo elemento de prueba.</li>
+                </ul>
+                <ul class="bullet-outside">
+                    <li>Elemento con texto largo para demostrar list-style-position: outside. Observa cómo el texto mantiene su propio margen izquierdo.</li>
+                    <li>Segundo elemento de prueba.</li>
+                </ul>
+            </div>
+
+            <h3>Imagen como Bullet</h3>
+            <ul class="bullet-imagen">
+                <li>Elemento de lista con icono personalizado</li>
+                <li>Otro elemento con icono personalizado</li>
+            </ul>
+
+            <h3>Secuencia no lineal (Lista Ordenada)</h3>
+            <ol start="10" reversed class="lista-no-lineal">
+                <li>Primer ítem (debe ser el 10)</li>
+                <li>Segundo ítem (debe ser el 9)</li>
+                <li value="5">Tercer ítem con salto (debe ser el 5)</li>
+                <li>Cuarto ítem (debe ser el 4)</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="enlaces-estados">
+            <h2>Navegación y Estados de Enlace</h2>
+            <nav class="menu-enlaces">
+                <a href="https://www.google.com" class="enlace-prueba">Buscador Común</a>
+                <a href="https://ejemplo-no-visitado-12345.com" class="enlace-prueba">Sitio Desconocido</a>
+                <a href="#top" class="enlace-prueba">Volver arriba</a>
+            </nav>
+        </section>
+
+        <hr>
+
         
-        <h2>Esto es el encabezado 2</h2>
-        <p>Este párrafo es el contenido despues del encabezado 2</p>
-        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/q">
-            Esto es una cita
-        </blockquote>
+        <section class="modos-escritura">
+            <h2>Propiedades Físicas vs Lógicas</h2>
+            
+            <div class="contenedor-modos">
+                <p class="texto-vertical">Este bloque de texto debe probar el cambio entre writing-mode: horizontal-tb y vertical-rl. Asegúrate de que no se desborde.</p>
+                <br>
+                <div class="caja-fisica">
+                    Caja Física (usa width y height)
+                </div>
 
-        <h3>Este es el encabezado 3</h3>
-        <p>Y este es el último párrafo del artículo <q>que incluye una cita</q> </p>
+                <div class="caja-logica">
+                    Caja Lógica (usa inline-size y block-size)
+                </div>
+            </div>
+            
+            <div class="analisis-requerido">
+                <h4>Comparación de comportamientos al rotar el writing-mode:</h4>
+                <p>...</p>
+            </div>
+        </section>
 
-    </article>
+    </main>
 </body>
 </html>
