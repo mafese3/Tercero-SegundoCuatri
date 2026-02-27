@@ -24,3 +24,69 @@ a[href*="wikipedia"] {
 a[href$=".pdf"] {
     color: #b71c1c;
 }
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:last-child {
+    color: #777;
+    font-style: italic;
+}
+
+table tr:nth-child(even) {
+    background-color: #e3f3fd;
+}
+
+p:not(.destacado) {
+    border-left: 3px solid #ccc;
+    padding-left: 0.6rem;
+}
+
+p.intro-texto::first-line {
+    font-weight: bold;
+    color: #1a237e;
+}
+
+p.capitular::first-letter {
+    font-size: 3em;
+    float: left;
+    line-height: 0.8;
+    margin-left: 4px;
+}
+
+td:hover {
+    background-color: #fff9c4;
+}
+
+.cita em {
+    color: #6a1b9a;
+    font-style: normal;
+}
+
+.lista-compacta > li{
+    list-style: "→";
+}
+
+h2 > p {
+    color: #555;
+    font-style: italic;
+}
+
+h3 + p {
+    padding-left: 1rem;
+}
+
+.etiqueta.urgente {
+    background-color: #f44336;
+    color: white;
+}
+
+h2, h3 {
+    font-family: Georgia, serif;
+    border-bottom: 2px solid #ddd;
+}
+
+.tarjeta > * {
+    margin-bottom: 0.5rem;
+}
