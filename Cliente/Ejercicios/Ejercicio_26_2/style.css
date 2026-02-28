@@ -11,11 +11,6 @@ body {
    ENCABEZADO FIJO
 ========================================== */
 header {
-    /* 1. Haz que el posicionamiento sea fijo */
-    /* 2. Pégalo arriba, a la izquierda y a la derecha */
-    /* 3. Ponle un color de fondo para que no se mezcle con el texto al hacer scroll */
-    /* 4. Dale un poco de padding y un z-index alto */
-
     position: fixed;
     background-color: rgb(208, 255, 255);
     padding: 2rem;
@@ -150,7 +145,6 @@ main {
 
 .caja-content-box,
 .caja-border-box {
-    /* A ambas: width 200px, padding 20px, border 5px solid black, background-color claro */
     width: 200px;
     padding: 20px;
     border: 5px solid black;
@@ -216,7 +210,6 @@ main {
 }
 
 .contenedor-padre {
-    /* Dale un tamaño, un borde grueso, y MUY IMPORTANTE: position relative */
     border: 5px solid black;
     height: 250px;
     width: 300px;
@@ -224,7 +217,6 @@ main {
 }
 
 .caja-relativa {
-    /* position relative, top 20px, left 30px. Ponle fondo. */
     position: relative;
     top: 20px;
     left: 60px;
@@ -232,7 +224,6 @@ main {
 }
 
 .caja-absoluta {
-    /* position absolute, y posicionala con top/bottom/left/right. Ponle fondo. */
     position: absolute;
     background-color: antiquewhite;
     bottom: 10px;
@@ -250,15 +241,12 @@ main {
 }
 
 .caja-calc-2 {
-    /* width usando calc() mezclando unidades, color de fondo, alto fijo */
     width: calc(50vw + 5rem);
     background-color: aliceblue;
     height: 30px;
 }
 
 .caja-important {
-    /* Intenta poner el fondo verde, pero luego haz otra regla (o usa una clase/id diferente)
-       que intente ponerlo rojo y usa !important para que gane la batalla. */
     background-color: green !important;
 }
 
