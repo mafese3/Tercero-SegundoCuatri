@@ -15,10 +15,14 @@ header {
     /* 2. Pégalo arriba, a la izquierda y a la derecha */
     /* 3. Ponle un color de fondo para que no se mezcle con el texto al hacer scroll */
     /* 4. Dale un poco de padding y un z-index alto */
-    
+
+    position: fixed;
+    background-color: rgb(208, 255, 255);
+    padding: 2rem;
+    width: 100%;
+    z-index: 10;
 }
 
-/* Para que el contenido principal no quede oculto bajo el header fijo */
 main {
     padding-top: 80px;
     margin: 0 20px;
