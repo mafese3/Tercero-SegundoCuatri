@@ -71,177 +71,193 @@ main {
    2. FONDOS Y BORDES
 ========================================== */
 .fondo-repeat-x {
-    /* 1. Añade una url() de imagen de fondo (puedes buscar una pequeña en internet) */
-    /* 2. Haz que solo se repita en horizontal */
-    /* 3. Dale una altura al div para que se vea bien la imagen */    
+    height: 15rem;
+    background-image: url(https://a.thumbs.redditmedia.com/HaXDOt6VCSDYHNnBG2kmo7xArWVWkl8_QgppfGAQP-0.png);
+    background-repeat: repeat-x;
 }
 
 .fondo-posicion {
-    /* 1. Añade una url() de imagen */
-    /* 2. Evita que se repita */
-    /* 3. Juega con background-position */
-    /* 4. Dale altura al div */
-    
+    height: 18rem;
+    background-image: url(https://a.thumbs.redditmedia.com/HaXDOt6VCSDYHNnBG2kmo7xArWVWkl8_QgppfGAQP-0.png);
+    background-repeat: no-repeat;
+    background-position: bottom;    
 }
 
 .borde-solid {
-    /* Borde de 3px, sólido, color a tu elección. Ponle padding. */
-    
+    border: 2px solid blue;
+    padding: 0.5rem;
+    margin-bottom: 10px;
 }
 
 .borde-dashed {
-    /* Borde de 3px, dashed, color a tu elección. Ponle padding. */
-    
+    border: 2px dashed red;
+    padding: 0.5rem;
+    margin-bottom: 10px;    
 }
 
 .borde-dotted {
-    /* Borde de 3px, dotted, color a tu elección. Ponle padding. */
-    
+    border: 3px dotted green;
+    padding: 0.5rem;
+    margin-bottom: 10px;
 }
 
 .borde-double {
-    /* Borde de 6px, double, color a tu elección. Ponle padding. */
-    
+    border: 6px double orange;
+    padding: 0.5rem;    
 }
 
 .tarjeta-redondeada {
-    /* Dale borde, padding, algo de color de fondo y aplica border-radius */
-    
+    border: 2px solid blue;
+    border-radius: 1rem;
+    padding: 0.5rem;   
+    background-color: rgba(128, 205, 215, 0.348); 
 }
 
-/* ==========================================
-   3. TAMAÑO Y DESBORDAMIENTO
-========================================== */
 .caja-overflow {
-    /* 1. Dale width y height pequeños (ej. 150px) */
-    /* 2. Ponle un borde */
-    /* 3. Prueba a cambiar el overflow (visible, hidden, scroll, auto) */
-    
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+    overflow: hidden;
 }
 
 .contenedor-estrecho {
-    /* Dale un ancho de 300px y un borde */
-    
+    width: 400px;
+    border: 2px dashed green;    
 }
 
 .img-width {
-    /* Fuerza el ancho al 100% (width) */
-    
+    width: 100%;
 }
 
 .img-max-width {
-    /* Limita el ancho al 100% (max-width) */
-    
+    max-width: 100%;
 }
 
 .caja-min-height-vacia, 
 .caja-min-height-llena {
-    /* Dale un min-height de 100px, un borde y un color de fondo para distinguirlas */
-    
+    min-height: 100px;
 }
 
 .caja-viewport {
-    /* Usa 50vw para el ancho y 30vh para el alto. Ponle fondo. */
-    
+    width: 50vw;
+    height: 30vw;
+    background-color: aqua;
 }
 
-/* ==========================================
-   4. MODELO DE CAJAS
-========================================== */
 .caja-content-box,
 .caja-border-box {
     /* A ambas: width 200px, padding 20px, border 5px solid black, background-color claro */
-    
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: rgba(143, 229, 216, 0.454);
 }
 
 .caja-content-box {
-    /* Aplica box-sizing: content-box */
-    
+    box-sizing: content-box;
 }
 
 .caja-border-box {
-    /* Aplica box-sizing: border-box */
-    
+    box-sizing: border-box;
 }
 
 .bloque-margen {
-    /* Dale algo de padding y fondo para que parezca un bloque.
-       Luego juega con margin-top y margin-bottom para ver el colapso. */
-    
+    padding: 1rem;
+    background-color:turquoise;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
 }
 
 .caja-lados-distintos {
-    /* Usa margin-top, margin-right, etc. y padding-top, padding-right, etc.
-       Ponle un borde para que veas el resultado. */
-    
+    border: 2px solid red;
+    padding: 1rem 0.5rem;
+    margin: 10px 1.5rem 2.5rem;
 }
 
 .caja-margin-padding {
-    /* Ponle borde, color de fondo, margin uniforme y padding uniforme */
-    
+    border: 2px dashed aqua;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 5px;
+    margin: 2rem;
 }
 
 /* ==========================================
    5. DISPLAY Y POSICIONAMIENTO
 ========================================== */
 .contenedor-spans {
-    /* Solo para separar visualmente */
     margin-bottom: 20px;
 }
 
 .span-prueba {
-    /* 1. Ponles borde o fondo */
-    /* 2. Intenta darles width y padding */
-    /* 3. Cambia el display a inline-block para que funcionen las medidas */
-    
+    border: 1px solid black;
+    background-color: red;
+    padding: 1rem;
+    width: 100px;    
+    display: inline-block;
 }
 
 .lista-nav {
-    /* Quita los puntos de la lista y el padding/margin por defecto */
-    
+    list-style-type: none;
 }
 
 .item-nav {
-    /* Haz que los elementos de la lista se pongan uno al lado del otro */
-    
+    display: inline-block;
+    background-color: rgba(224, 147, 147, 0.491);
 }
 
 .item-nav a {
-    /* Quita el subrayado, ponle padding, color de fondo y color de texto.
-       Recuerda que los enlaces son inline por defecto, puede que necesites cambiar su display. */
-    
+    display: block;
+    text-decoration: none;
+    padding: 2rem;
 }
 
 .contenedor-padre {
     /* Dale un tamaño, un borde grueso, y MUY IMPORTANTE: position relative */
-    
+    border: 5px solid black;
+    height: 250px;
+    width: 300px;
+    position: relative;
 }
 
 .caja-relativa {
     /* position relative, top 20px, left 30px. Ponle fondo. */
+    position: relative;
+    top: 20px;
+    left: 60px;
     
 }
 
 .caja-absoluta {
     /* position absolute, y posicionala con top/bottom/left/right. Ponle fondo. */
-    
+    position: absolute;
+    background-color: antiquewhite;
+    bottom: 10px;
+    right: 30px;
 }
 
 /* ==========================================
    6. FUNCIONES Y !IMPORTANT
 ========================================== */
 .caja-calc-1 {
-    /* width usando calc(), color de fondo, alto fijo y un margen para separar */
-    
+    width: calc(100% - 400px);
+    background-color: yellowgreen;
+    height: 100px;
+    margin-bottom: 2rem ;
 }
 
 .caja-calc-2 {
     /* width usando calc() mezclando unidades, color de fondo, alto fijo */
-    
+    width: calc(50vw + 5rem);
+    background-color: aliceblue;
+    height: 30px;
 }
 
 .caja-important {
     /* Intenta poner el fondo verde, pero luego haz otra regla (o usa una clase/id diferente)
        que intente ponerlo rojo y usa !important para que gane la batalla. */
-    
+    background-color: green !important;
+}
+
+div.caja-important{
+    background-color: red;
 }
