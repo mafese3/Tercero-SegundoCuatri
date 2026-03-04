@@ -50,4 +50,31 @@ public class Controlador {
         return "resultado.jsp";
     }
 
+    @PostMapping("/calcular")
+    public String doCalcular (@RequestParam("op1") Float a, @RequestParam("op2") Float b, @RequestParam("operador") Integer operacion, Model model) {
+        Float resultado = (float) 0;
+        String error = "";
+        switch (operacion) {
+            case 0:
+                resultado = a+b;
+                break;
+            case 1:
+                resultado = a-b;
+                break;
+            case 2:
+                resultado=a*b;
+                break;
+            case 3:
+                if(b == 0 ){
+                    error = "No se puede dividir por 0";
+                } else{
+                    resultado=a/b;
+                }
+                break;
+        }
+
+        model.addAttribute("resultado", resultado);
+        model.addAttribute("error", error);
+        return "calculadora.jsp";
+    }
 }
