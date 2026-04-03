@@ -1,0 +1,16 @@
+//d hace que se construya en segundo plano.
+docker compose up -d 
+
+//Accedemos al contenedor en el navegador: http://localhost:8080
+//Utilizar los datos definidos para el login:
+- PostgreSQL
+- db
+- postgres
+- secretpassword
+- postgres
+
+//f para verlo en tiempo real
+docker compose logs -f
+
+//para limpiar los contenedores
+docker compose down

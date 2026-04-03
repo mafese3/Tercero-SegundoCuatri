@@ -1,0 +1,5 @@
+//Poner despues de construirlo para comprobar las variables de entorno que se han usado.
+docker compose config 
+
+//Para forzar el reseteo de la página, si se cambia alguna variable de entorno se aplica.
+docker compose up -d --force-recreate

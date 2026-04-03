@@ -1,0 +1,2 @@
+//Sin -d para observar los logs y ver cómo el adminer se construye cuando acaba el postgres.
+docker compose up
