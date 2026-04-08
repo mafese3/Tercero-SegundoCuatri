@@ -1,9 +1,0 @@
-services:
-  db:
-    image: postgres:15
-    environment:
-      - POSTGRES_PASSWORD=secretpassword    
-  web:
-    image: adminer
-    ports:
-      - "8080:8080"
